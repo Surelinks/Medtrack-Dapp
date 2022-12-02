@@ -21,6 +21,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    color: "#2d0d0d"
   },
   appBar: {
     transition: theme.transitions.create(["margin", "width"], {
@@ -48,8 +49,8 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "#09126d",
-    color: "#fff",
+    backgroundColor: "#2d0d0d",
+    color: "red",
   },
   drawerHeader: {
     display: "flex",
@@ -112,14 +113,14 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
           <Typography
             variant="h6"
             noWrap
-            style={{ display: "flex", alignItems: "center" }}
+            style={{ display: "flex", alignItems: "center", color: "red"}}
           >
             <img
               alt="."
-              src="/logo.png"
+              src="/logo3.png"
               style={{ height: "45px", width: "auto" }}
             />
-            &nbsp;SupplyChain-Dapp
+            &nbsp;MedTrack-Dapp
           </Typography>
         </Toolbar>
       </AppBar>
@@ -136,21 +137,21 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
         <ListItemText><b>{pageTitle}</b></ListItemText>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
-              <ChevronLeftIcon style={{ color: "#fff" }} />
+              <ChevronLeftIcon style={{ color: "RED" }} />
             ) : (
-              <ChevronRightIcon />
+              <ChevronRightIcon  />
             )}
           </IconButton>
         </div>
         <List>
-          <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+          <Link to="/" style={{ textDecoration: "none", color: "RED" }}>
             <ListItem>
               <ListItemText>Home</ListItemText>
             </ListItem>
           </Link>
           <Link
             to="/explorer"
-            style={{ textDecoration: "none", color: "#fff" }}
+            style={{ textDecoration: "none", color: "red" }}
           >
             <ListItem>
               <ListItemText>Explorer</ListItemText>
@@ -162,7 +163,7 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
             navItems.map((item) => (
               <Link
                 to={item[1]}
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "red" }}
               >
                 <ListItem button key={item[0]}>
                   <ListItemText primary={item[0]} />
@@ -185,15 +186,15 @@ export default function PersistentDrawerLeft({ pageTitle,navItems, children }) {
               alignItems: "center",
               fontWeight: 500,
               fontSize: 17,
-              borderTop: "1px solid #44a",
+              borderTop: "1px solid red",
             }}
           >
-            By Team Akatsuki &nbsp;&nbsp;
+            By Team MedTrack &nbsp;&nbsp;
             <a
               style={{ textDecoration: "none" }}
-              href="https://github.com/rishav4101/eth-supplychain-dapp"
+              href="https://github.com/surelinks/Medtrack-dapp"
             >
-              <GitHubIcon style={{ color: "#fff" }} />
+              <GitHubIcon style={{ color: "red" }} />
             </a>
           </div>
         </div>

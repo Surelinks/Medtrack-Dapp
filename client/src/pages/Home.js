@@ -33,7 +33,7 @@ export default function Home() {
             >
               <img
                 alt="."
-                src="/homeArt.png"
+                src="/home2.png"
                 style={{ width: "90%", height: "auto" }}
               />
             </Grid>

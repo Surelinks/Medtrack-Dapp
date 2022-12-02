@@ -17,7 +17,7 @@ export default function Loader() {
 
   return (
     <div className={classes.root}>
-      <CircularProgress style={{ fontSize: "200px" }} />
+      <CircularProgress style={{ fontSize: "200px", color: "red", }} />
     </div>
   );
 }

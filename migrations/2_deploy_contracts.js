@@ -8,3 +8,5 @@ module.exports = function(deployer) {
   deployer.deploy(SupplyChainContract, {gas: 15555555});
   // deployer.deploy(FetchContract, {gas: 15555555});
 };
+
+//For deployment 

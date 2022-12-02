@@ -485,3 +485,5 @@ contract SupplyChain {
         p.transaction = tran;
     }
 }
+
+// A new beginning 
